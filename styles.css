@@ -29,6 +29,8 @@
     background-color: #e2e8f0;
     grid-template-columns: auto 400px;
     grid-template-rows: 80px 1fr 1fr;
+    padding-bottom: 20px;
+    box-shadow: 3px 3px 5px 2px #cbd0d6 inset;
 }
 
 .list {
@@ -39,7 +41,7 @@
     padding-left: 40px;
 }
 
-a::before {
+li a::before {
     padding-right: 15px;
 }
 
@@ -121,7 +123,7 @@ a {
     outline: none;
 }
 
-a:hover {
+li a:hover {
     padding-left: 30px;
 }
 
@@ -142,6 +144,11 @@ button {
 
 button:hover {
     background-color: #e2e8f0;
+    border-radius: 70px;
+}
+
+button:active {
+    transform: translateY(1px);
 }
 
 .search {
@@ -179,6 +186,7 @@ button:hover {
 .name {
     font-size: 22px;
     font-weight: 600;
+    user-select: none;
 }
 
 .welcome {
@@ -188,6 +196,7 @@ button:hover {
     grid-column: 2 / 3;
     gap: 50px;
     padding-left: 20px;
+    user-select: none;
 }
 
 #hi {
@@ -234,7 +243,8 @@ button:hover {
     align-self: center;
     font-size: 25px;
     font-weight: 600;
-    padding-left: 20px;
+    padding-left: 40px;
+    user-select: none;
 }
 
 #announcements {
@@ -243,9 +253,74 @@ button:hover {
     font-size: 25px;
     font-weight: 600;
     padding-left: 20px;
+    user-select: none;
 }
 
 #projects {
     display: grid;
     grid-area: 2 / 1 / 4 / 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-left: 20px;
+    border-left-width: 10px;
+
+}
+
+.project {
+    border-radius: 20px;
+    background-color: white;
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-left-color: #f0b429;
+    padding-left: 10px;
+    height: 1fr;
+    user-select: none;
+    box-shadow: 3px 3px 4px 3px #cbd0d6;
+}
+
+.project:hover {
+    cursor: pointer;
+}
+
+.project:active {
+    box-shadow: 1px 1px 4px 3px #cbd0d6;
+    transform: translateY(1px) translateX(1px);
+}
+
+.one {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.two {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.three {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.four {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.five {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.six {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.desc {
+    padding-left: 15px;
+    font-size: 18px;
 }
