@@ -1,5 +1,9 @@
 
 
+body {
+    user-select: none;
+}
+
 #container {
     display: grid;
     height: 935px;
@@ -27,7 +31,7 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     background-color: #e2e8f0;
-    grid-template-columns: auto 400px;
+    grid-template-columns: auto 450px;
     grid-template-rows: 80px 1fr 1fr;
     padding-bottom: 20px;
     box-shadow: 3px 3px 5px 2px #cbd0d6 inset;
@@ -99,7 +103,6 @@ li a::before {
 .dashboard {
     color: black;
     font-size: 35px;
-    user-select: none;
 }
 
 .nav {
@@ -186,7 +189,6 @@ button:active {
 .name {
     font-size: 22px;
     font-weight: 600;
-    user-select: none;
 }
 
 .welcome {
@@ -196,7 +198,6 @@ button:active {
     grid-column: 2 / 3;
     gap: 50px;
     padding-left: 20px;
-    user-select: none;
 }
 
 #hi {
@@ -244,16 +245,14 @@ button:active {
     font-size: 25px;
     font-weight: 600;
     padding-left: 40px;
-    user-select: none;
 }
 
-#announcements {
+#announcements-title {
     grid-area: 1 / 2 / 2 / 3 ;
     align-self: center;
+    justify-self: center;
     font-size: 25px;
     font-weight: 600;
-    padding-left: 20px;
-    user-select: none;
 }
 
 #projects {
@@ -275,7 +274,6 @@ button:active {
     border-left-color: #f0b429;
     padding-left: 10px;
     height: 1fr;
-    user-select: none;
     box-shadow: 3px 3px 4px 3px #cbd0d6;
 }
 
@@ -324,3 +322,25 @@ button:active {
     padding-left: 15px;
     font-size: 18px;
 }
+
+#announcements {
+    padding: 40px;
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-right: 5px;
+}
+
+.announcement-title {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+hr {
+    border-top: 2px solid #e2e8f0;
+}
+
